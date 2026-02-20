@@ -1,42 +1,89 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #f3f6fb;
+  background: #0b1020;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #16203f 0%, #0b1020 45%);
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.app-shell {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .card {
-  padding: 2em;
+  background: rgba(18, 26, 48, 0.85);
+  border: 1px solid #2e3f63;
+  border-radius: 14px;
+  padding: 1.25rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
-.read-the-docs {
-  color: #888;
+.stack {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+textarea {
+  border-radius: 10px;
+  border: 1px solid #3f5484;
+  background: #0f1730;
+  color: #e9eeff;
+  padding: 0.7rem;
+}
+
+button {
+  width: fit-content;
+  border: 0;
+  background: #6588ff;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.55rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.success {
+  color: #8dffbc;
+}
+
+.error {
+  color: #ffb4b4;
+}
+
+pre {
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin: 0.5rem 0;
+  line-height: 1.4;
 }
